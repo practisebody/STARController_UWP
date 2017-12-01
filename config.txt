@@ -1,0 +1,6 @@
+ShowDebug true
+ShowSpatial false
+DetectChecker true
+ShowAnnotationRays true
+AnnotationServerIP 127.0.0.1
+AnnotatoinServerPort 8988
