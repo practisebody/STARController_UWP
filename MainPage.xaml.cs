@@ -186,7 +186,12 @@ namespace STARController
                 TextBox text = (TextBox)FindName(name + "TextBox");
                 value = text.Text;
             }
-            client.Send(String.Format("{{{0}:\"{1}\"}}", name, value));
+            string send;
+            if (value == "")
+                send = String.Format("{{{0}:\"null\"}}", name);
+            else
+                send = String.Format("{{{0}:\"{1}\"}}", name, value);
+            client.Send(send);
         }
 
         private StackPanel NewLine()
