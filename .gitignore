@@ -1,3 +1,5 @@
+AppPackages/
+BundleArtifacts/
 bin/
 obj/
 .vs/
